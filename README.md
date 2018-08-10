@@ -18,8 +18,12 @@
       |——views 逻辑页面
           |——home 首页
             |——index.vue 模板
-            |——styles.scss 样式
-            |——images 图片
+            |——styles.scss 样式 可选
+            |——images 图片 可选
+            |——swipe
+              |——index.vue
+              |——style.scss
+              |——images
           |——mime 主页
             |——index.vue
             |——style.scss
@@ -37,3 +41,14 @@
 * 引入移动端适配方案rem
 * 删除无用文件HolleWord.vue等
 * 新增页面views/home views包含所有的逻辑页面
+* 使用css处理器scss
+
+  安装依赖 style-loader css-loader sass-loader node-sass
+
+  npm install  style-loader css-loader sass-loader node-sass --save-dev
+
+  这里需要注意的是，有可能node-sass安装失败，这时候用淘宝的cnpm安装就能解决这个问题
+
+  即
+
+  cnpm install node-sass --save-dev
