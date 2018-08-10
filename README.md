@@ -62,13 +62,13 @@ import './assets/rem';//src/assets/rem.js
 
   安装依赖 style-loader css-loader sass-loader node-sass
 
-  npm install  style-loader css-loader sass-loader node-sass --save-dev
+  $ npm install  style-loader css-loader sass-loader node-sass --save-dev
 
   这里需要注意的是，有可能node-sass安装失败，这时候用淘宝的cnpm安装就能解决这个问题
 
   即
 
-  cnpm install node-sass --save-dev
+  $ cnpm install node-sass --save-dev
 
   如果报以下错误
 
@@ -106,7 +106,7 @@ export default new Router({
 
 1. 安装
 
-   npm install babel-polyfill --save
+  $ npm install babel-polyfill --save
 
 2. 引入
 
@@ -115,4 +115,26 @@ export default new Router({
   entry: {
     app: ['babel-polyfill','./src/main.js'],
   },
+```
+
+* px 转 rem
+
+1. 安装
+
+  $ npm install postcss-pxtorem --save-dev
+
+2. 引入
+
+```js
+// ./.postcssrc.js
+"plugins": {
+  // to edit target browsers: use "browserslist" field in package.json
+  'autoprefixer': {
+    browsers: ['Android >= 4.0', 'iOS >= 7']
+  },
+  'postcss-pxtorem': {
+    rootValue: 37.5,
+    propList: ['*']
+  }
+}
 ```

@@ -1,6 +1,6 @@
 <template>
   <div class="mime">
-    mime page
+    <h3>mime page</h3>
   </div>
 </template>
 <script>
