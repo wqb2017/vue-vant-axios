@@ -70,6 +70,14 @@ import './assets/rem';//src/assets/rem.js
 
   cnpm install node-sass --save-dev
 
+  如果报已下错误
+
+  ![](./dosc/images/1.scss.png)
+
+  解决办法是，删除node_modules package-lock.json，并重新安装依赖
+
+  npm install
+
 * 路由按需加载
 ```js
 //src/router/index.js
