@@ -101,3 +101,12 @@ export default new Router({
 结果对比
 
 ![](./dosc/images/2.router.png)
+
+* babel-polyfill
+
+```js
+//build/webpack.base.conf.js
+  entry: {
+    app: ['babel-polyfill','./src/main.js'],
+  },
+```
