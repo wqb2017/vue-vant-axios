@@ -146,6 +146,58 @@ $ npm install postcss-pxtorem --save-dev
 }
 ```
 
+## v1.1.0
+
+* 封装 axios，设置默认参数并能在this中使用
+```js
+// ./src/assets/js/createRequest
+import axios from 'axios';
+/**
+ * 前后端请求
+ *
+ * @export
+ * @param {any} URL 地址
+ * @param {any} params 参数
+ * @returns
+ */
+export default function createRequestHttp (URL, params) {
+  return new Promise(function (resolve, reject) {
+    let instance = axios.create();
+    instance.defaults.baseURL = 'http://120.78.128.52:81/cleaning';
+    instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+    instance.defaults.withCredentials = true;
+    instance.defaults.transformRequest = [
+      function (data) {
+        let newData = [];
+        for (let k in data) {
+          newData.push(encodeURIComponent(k) + '=' + encodeURIComponent(data[k]));
+        }
+        return newData.join('&');
+      }
+    ];
+    instance.defaults.transformResponse = [
+      function (res) {
+        res = JSON.parse(res);
+        if (res.state !== 1) {
+          throw Error('请求失败');
+        }
+        return res.data;
+      }
+    ];
+    instance.post(URL, params)
+      .then(res => {
+        resolve(res);
+      }).catch(err => {
+        reject(err);
+      });
+  });
+}
+
+//main.js
+import createRequestHttp from '@/assets/js/createRequest';
+Vue.prototype.$createRequestHttp = createRequestHttp;
+```
+
 ## 也许这些对您有帮助
 
 * css 文件引入
