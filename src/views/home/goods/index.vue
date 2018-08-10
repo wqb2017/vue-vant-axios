@@ -37,7 +37,6 @@ export default {
       if (res.data) {
         this.getProductListDatas = res.data.list;
       }
-      console.log(res);
     });
   },
   methods: {
