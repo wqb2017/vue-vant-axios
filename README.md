@@ -4,9 +4,9 @@
 
 * vue
 * vue-router 路由
-* vant ui库
-* axios ajax库
-* scss css预处理器
+* vant ui 库
+* axios ajax 库
+* scss css 预处理器
 
 ## 项目文件架构说明
 
@@ -33,24 +33,29 @@
 
 ## v0.0.1
 
-* 搭建vue-vant-axios项目，使用vue-template-webpack模板
+* 搭建 vue-vant-axios 项目，使用 vue-template-webpack 模板
 
 ## v1.0.0
 
 * 安装插件 vant
+
 ```js
 //src/main.js
-  import Vant from 'vant';
-  import 'vant/lib/vant-css/index.css';
-  Vue.use(Vant);
+import Vant from 'vant';
+import 'vant/lib/vant-css/index.css';
+Vue.use(Vant);
 ```
-* 引入移动端适配方案rem
+
+* 引入移动端适配方案 rem
+
 ```js
 //src/main.js
-import './assets/rem';//src/assets/rem.js
+import './assets/rem'; //src/assets/rem.js
 ```
-* 删除无用文件HolleWord.vue等
-* 新增页面views/home views包含所有的逻辑页面
+
+* 删除无用文件 HolleWord.vue 等
+* 新增页面 views/home views 包含所有的逻辑页面
+
 ```js
 |——src
   |——views
@@ -58,13 +63,14 @@ import './assets/rem';//src/assets/rem.js
       |——index.vue
       |——style.scss
 ```
-* 使用css处理器scss
+
+* 使用 css 处理器 scss
 
   安装依赖 style-loader css-loader sass-loader node-sass
 
-  $ npm install  style-loader css-loader sass-loader node-sass --save-dev
+  $ npm install style-loader css-loader sass-loader node-sass --save-dev
 
-  这里需要注意的是，有可能node-sass安装失败，这时候用淘宝的cnpm安装就能解决这个问题
+  这里需要注意的是，有可能 node-sass 安装失败，这时候用淘宝的 cnpm 安装就能解决这个问题
 
   即
 
@@ -74,16 +80,17 @@ import './assets/rem';//src/assets/rem.js
 
   ![](./dosc/images/1.scss.png)
 
-  解决办法是，删除node_modules package-lock.json，并重新安装依赖
+  解决办法是，删除 node_modules package-lock.json，并重新安装依赖
 
   npm install
 
 * 路由按需加载
+
 ```js
 //src/router/index.js
 import Vue from 'vue';
 import Router from 'vue-router';
-import _import from './_import';//src/router/_import.js
+import _import from './_import'; //src/router/_import.js
 
 Vue.use(Router);
 
@@ -106,7 +113,7 @@ export default new Router({
 
 1. 安装
 
-  $ npm install babel-polyfill --save
+$ npm install babel-polyfill --save
 
 2. 引入
 
@@ -121,7 +128,7 @@ export default new Router({
 
 1. 安装
 
-  $ npm install postcss-pxtorem --save-dev
+$ npm install postcss-pxtorem --save-dev
 
 2. 引入
 
@@ -135,6 +142,60 @@ export default new Router({
   'postcss-pxtorem': {
     rootValue: 37.5,
     propList: ['*']
+  }
+}
+```
+
+## 也许这些对您有帮助
+
+* css 文件引入
+
+  当我们要引入不是其本文件跟目录下的 css 文件时，记得使用 '~@文件名' 来简化 './../../....'这些相对路径
+
+```js
+@import './../../../assets/css/mixin.scss';
+//简化成功
+@import '~@/assets/css/mixin.scss';
+```
+
+* css常用相同模块内容可以提mixin提供多处使用，如：
+```css
+//省略号
+@mixin omit{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//清除浮动
+@mixin clearfix{
+  zoom: 1;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+  }
+}
+```
+
+* 标题或者其他个性化的内容并且每个页面都会用到的内容可以在 router 路由的 mate 属性中设置，如：
+
+```js
+{
+  path: '/home',
+  name: 'Home',
+  component: _import('home'),
+  meta: {
+    title: '首页'//标题
+  }
+},
+{
+  path: '/mime',
+  name: 'Mime',
+  component: _import('mime'),
+  meta: {
+    title: '个人中心'
   }
 }
 ```

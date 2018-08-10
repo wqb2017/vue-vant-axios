@@ -1,0 +1,43 @@
+@import '~@/assets/css/mixin.scss';
+.goods {
+  margin-top: 0.24rem;
+  .goods-list {
+    .goods-list-item {
+      padding: 0.08rem;
+      background-color: #fff;
+      @include clearfix;
+      .goods-list-item__img {
+        height: 1rem;
+        width: 1rem;
+        background-color: #f00;
+        float: left;
+        border-radius: 0.04rem;
+      }
+      .goods-list-item__desc {
+        padding-left: 1.08rem;
+        .label {
+          font-size: 0.14rem;
+          padding-top: 0.08rem;
+          @include omit;
+        }
+        .price {
+          font-size: 0.12rem;
+          padding-top: 0.08rem;
+          @include desc;
+          .rice{
+            @include price;
+          }
+          .del {
+            font-size: 0.1rem;
+            padding-left: 0.08rem;
+          }
+        }
+        .tip {
+          padding-top: 0.08rem;
+          @include omit;
+          @include desc;
+        }
+      }
+    }
+  }
+}

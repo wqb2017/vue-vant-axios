@@ -1,11 +1,21 @@
 <template>
   <div class="home">
-    <h3>home page</h3>
+    <TheSwipes></TheSwipes>
+    <TheTabbar></TheTabbar>
+    <TheGoods></TheGoods>
   </div>
 </template>
 <script>
+import TheSwipes from './swipes';
+import TheTabbar from './tabbar';
+import TheGoods from './goods';
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    TheSwipes,
+    TheTabbar,
+    TheGoods
+  }
 };
 </script>
 

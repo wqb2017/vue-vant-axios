@@ -1,0 +1,27 @@
+//省略号
+@mixin omit{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//清除浮动
+@mixin clearfix{
+  zoom: 1;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+  }
+}
+//说明
+@mixin desc{
+  color: #a4a4a4;
+  font-size: 0.12rem;
+}
+//价格
+@mixin price{
+  color: #ff2525;
+  font-size: 0.14rem;
+}
