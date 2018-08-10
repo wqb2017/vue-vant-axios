@@ -18,10 +18,9 @@
   </div>
 </template>
 <script>
-import createRequestHttp from '@/assets/js/createRequest';
 export default {
   mounted () {
-    createRequestHttp('/product/getProductList', {
+    this.$createRequestHttp('/product/getProductList', {
       producttype: 1,
       pageNumber: 1,
       pageSize: 10
