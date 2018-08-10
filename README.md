@@ -70,7 +70,7 @@ import './assets/rem';//src/assets/rem.js
 
   cnpm install node-sass --save-dev
 
-  如果报已下错误
+  如果报以下错误
 
   ![](./dosc/images/1.scss.png)
 
@@ -106,7 +106,7 @@ export default new Router({
 
 1. 安装
 
-   npm install babel-polyfill
+   npm install babel-polyfill --save
 
 2. 引入
 
