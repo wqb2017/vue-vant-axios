@@ -40,7 +40,7 @@
 * 安装插件 vant
 
 ```js
-//src/main.js
+// ./src/main.js
 import Vant from 'vant';
 import 'vant/lib/vant-css/index.css';
 Vue.use(Vant);
@@ -49,8 +49,8 @@ Vue.use(Vant);
 * 引入移动端适配方案 rem
 
 ```js
-//src/main.js
-import './assets/rem'; //src/assets/rem.js
+// ./src/main.js
+import './assets/rem'; // ./src/assets/rem.js
 ```
 
 * 删除无用文件 HolleWord.vue 等
@@ -87,10 +87,10 @@ import './assets/rem'; //src/assets/rem.js
 * 路由按需加载
 
 ```js
-//src/router/index.js
+// ./src/router/index.js
 import Vue from 'vue';
 import Router from 'vue-router';
-import _import from './_import'; //src/router/_import.js
+import _import from './_import'; // ./src/router/_import.js
 
 Vue.use(Router);
 
@@ -118,7 +118,7 @@ $ npm install babel-polyfill --save
 2. 引入
 
 ```js
-//build/webpack.base.conf.js
+// ./build/webpack.base.conf.js
   entry: {
     app: ['babel-polyfill','./src/main.js'],
   },
@@ -193,7 +193,7 @@ export default function createRequestHttp (URL, params) {
   });
 }
 
-//main.js
+// ./main.js
 import createRequestHttp from '@/assets/js/createRequest';
 Vue.prototype.$createRequestHttp = createRequestHttp;
 ```

@@ -10,7 +10,7 @@ import axios from 'axios';
 export default function createRequestHttp (URL, params) {
   return new Promise(function (resolve, reject) {
     let instance = axios.create();
-    instance.defaults.baseURL = 'http://120.78.128.52:81/cleaning';
+    instance.defaults.baseURL = window.CONFIG.baseURL;
     instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
     instance.defaults.withCredentials = true;
     instance.defaults.transformRequest = [
