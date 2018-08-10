@@ -104,6 +104,12 @@ export default new Router({
 
 * babel-polyfill
 
+1. 安装
+
+   npm install babel-polyfill
+
+2. 引入
+
 ```js
 //build/webpack.base.conf.js
   entry: {
