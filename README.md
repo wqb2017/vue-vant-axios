@@ -69,3 +69,27 @@ import './assets/rem';//src/assets/rem.js
   即
 
   cnpm install node-sass --save-dev
+
+* 路由按需加载
+```js
+//src/router/index.js
+import Vue from 'vue';
+import Router from 'vue-router';
+import _import from './_import';//src/router/_import.js
+
+Vue.use(Router);
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: _import('home')
+    }
+  ]
+});
+```
+
+结果对比
+
+![](./dosc/images/2.router.png)
