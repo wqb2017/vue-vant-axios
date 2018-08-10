@@ -1,6 +1,7 @@
 # vue-vant-axios
 
 ## 技术栈
+
 * vue
 * vue-router 路由
 * vant ui库
@@ -28,7 +29,6 @@
             |——index.vue
             |——style.scss
             |——images
-
 ```
 
 ## v0.0.1
@@ -37,10 +37,27 @@
 
 ## v1.0.0
 
-* 安装插件 vant axios 并引入
+* 安装插件 vant
+```js
+//src/main.js
+  import Vant from 'vant';
+  import 'vant/lib/vant-css/index.css';
+  Vue.use(Vant);
+```
 * 引入移动端适配方案rem
+```js
+//src/main.js
+import './assets/rem';//src/assets/rem.js
+```
 * 删除无用文件HolleWord.vue等
 * 新增页面views/home views包含所有的逻辑页面
+```js
+|——src
+  |——views
+    |——home
+      |——index.vue
+      |——style.scss
+```
 * 使用css处理器scss
 
   安装依赖 style-loader css-loader sass-loader node-sass
