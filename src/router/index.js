@@ -1,15 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import _import from './_import';
+import routers from './routers';
 
 Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: _import('home')
-    }
-  ]
+const router = new Router({
+  routes: routers
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
+});
+
+export default router;
