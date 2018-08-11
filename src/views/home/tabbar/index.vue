@@ -18,7 +18,7 @@ export default {
   methods: {
     toggle () {
       // producttype：=1超市；=2好友；=3朋友圈；=4赚钱
-      this.$store.state.home.goodsProducttype = this.active + 1;
+      this.$store.commit('GOODS_PRODUCTTYPE', this.active + 1);
     }
   }
 };
