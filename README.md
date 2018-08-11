@@ -7,6 +7,7 @@
 * vant ui 库
 * axios ajax 库
 * scss css 预处理器
+* vuex 状态管理
 
 ## 项目文件架构说明
 

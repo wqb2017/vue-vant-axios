@@ -11,8 +11,8 @@
             <strong>{{item.name}}</strong>
           </p>
           <p class="price">
-            <font class="rice">{{item.proPromotionPrice}}/{{item.unit}}</font>
-            <del class="del">{{item.price}}/{{item.unit}}</del>
+            <font class="rice">{{item.proPromotionPrice}}元/{{item.unit}}</font>
+            <del class="del">{{item.price}}元/{{item.unit}}</del>
           </p>
           <p class="tip">{{item.detail}}</p>
         </div>
@@ -25,11 +25,17 @@ import * as Utils from '@/assets/js/utils';
 export default {
   data () {
     return {
-      getProductListDatas: []
+      getProductListDatas: [],
+      getProductListReq: {
+        producttype: this.$store.state.home.goodsProducttype,
+        pageNumber: 1,
+        pageSize: 10
+      }
     };
   },
   watch: {
     '$store.state.home.goodsProducttype' () {
+      this.getProductListReq.producttype = this.$store.state.home.goodsProducttype;
       this.getProductList();
     }
   },
@@ -48,11 +54,7 @@ export default {
      * 每日推荐列表
      */
     getProductList () {
-      this.$createRequestHttp('/product/getProductList', {
-        producttype: this.$store.state.home.goodsProducttype,
-        pageNumber: 1,
-        pageSize: 10
-      }).then((res) => {
+      this.$createRequestHttp('/product/getProductList', this.getProductListReq).then((res) => {
         if (res.data) {
           this.getProductListDatas = res.data.list;
         }
