@@ -1,0 +1,27 @@
+@import '~@/assets/css/mixin.scss';
+.self {
+  background-color: #90bd2b;
+  padding: 0.32rem 0;
+  @include clearfix;
+  .self__img {
+    margin: auto;
+    float: left;
+    text-align: center;
+    margin: 0 0.16rem 0 0.48rem;
+    img {
+      width: 0.72rem;
+      height: 0.72rem;
+      border-radius: 50%;
+    }
+  }
+  .self__info {
+    color: #fff;
+    .name {
+      font-size: 0.24rem;
+    }
+    .tel {
+      padding-top: 0.04rem;
+      font-size: 0.16rem;
+    }
+  }
+}

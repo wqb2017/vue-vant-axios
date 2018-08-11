@@ -1,0 +1,36 @@
+@import '~@/assets/css/mixin.scss';
+.order {
+  .order-title {
+    font-size: 0.16rem;
+    @include clearfix;
+    padding: 0.24rem 0.16rem;
+    background-color: #fff;
+    position: relative;
+    .order-title__label {
+      float: left;
+    }
+    .order-title__search {
+      float: right;
+      font-size: 0.12rem;
+      color: #a3a3a3;
+      margin-right: 0.16rem;
+      &:after {
+        position: absolute;
+        top: 48%;
+        right: 0.2rem;
+        width: 0.05rem;
+        height: 0.05rem;
+        border: solid 0.02rem #c8c8cd;
+        border-bottom-width: 0;
+        border-left-width: 0;
+        content: ' ';
+        transform: translateY(-50%) rotate(45deg);
+      }
+    }
+  }
+  .order-list{
+    .van-tabbar{
+      padding: 0.10rem 0;
+    }
+  }
+}

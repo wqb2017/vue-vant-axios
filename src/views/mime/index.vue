@@ -1,11 +1,18 @@
 <template>
   <div class="mime">
-    <h3>mime page</h3>
+    <TheSelf></TheSelf>
+    <TheOrder></TheOrder>
   </div>
 </template>
 <script>
+import TheSelf from './self';
+import TheOrder from './order';
 export default {
-  name: 'Mime'
+  name: 'Mime',
+  components: {
+    TheSelf,
+    TheOrder
+  }
 };
 </script>
 

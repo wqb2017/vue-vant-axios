@@ -1,6 +1,6 @@
 <template>
   <div class="goods">
-    <h3 class="goods-title">推荐列表</h3>
+    <h3 class="goods-title">推荐服务</h3>
     <ul class="goods-list">
       <li class="goods-list-item" v-for="(item,index) in getProductListDatas" :key="index">
         <div class="goods-list-item__img">
@@ -32,12 +32,6 @@ export default {
         pageSize: 10
       }
     };
-  },
-  watch: {
-    '$store.state.home.goodsProducttype' () {
-      this.getProductListReq.producttype = this.$store.state.home.goodsProducttype;
-      this.getProductList();
-    }
   },
   mounted () {
     this.getProductList();
