@@ -1,5 +1,8 @@
 # vue-vant-axios
 
+## demo
+  ![](./dosc/images/3.demo.gif)
+
 ## 技术栈
 
 * vue
