@@ -5,6 +5,6 @@
  * @param {any} file
  * @returns
  */
-export function setImagesURL (file) {
+export function parseFileURL (file) {
   return `${window.CONFIG.fileURL}${file}`;
 }

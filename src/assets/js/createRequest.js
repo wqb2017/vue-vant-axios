@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import axios from 'axios';
 /**
  * 前后端请求
@@ -39,3 +40,5 @@ export default function createRequestHttp (URL, params) {
       });
   });
 }
+
+Vue.prototype.$createRequestHttp = createRequestHttp;

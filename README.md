@@ -198,6 +198,38 @@ import createRequestHttp from '@/assets/js/createRequest';
 Vue.prototype.$createRequestHttp = createRequestHttp;
 ```
 
+* vuex
+
+1. 安装vuex
+
+  npm install vuex --save
+
+2. 使用vuex
+
+```js
+// ./main.js
+import store from './store';
+new Vue({
+  el: '#app',
+  router,
+  store,
+  components: { App },
+  template: '<App/>'
+});
+
+// ./src/store
+export default {
+  state: {
+    // 每日推荐列表-列表类型
+    goodsProducttype: 1
+  }
+};
+
+//使用
+// ./src/views/home/tabbar.index.vue
+this.$store.state.home.goodsProducttype
+```
+
 ## 也许这些对您有帮助
 
 * css 文件引入
@@ -251,3 +283,9 @@ Vue.prototype.$createRequestHttp = createRequestHttp;
   }
 }
 ```
+
+* 关于css大小设定问题，其实每个团队或者是设计师都有自己的见解，但是我个人用的最多的，也是觉得最友好的是用8的整数倍数做基准设定大小是很好的一个约定。当然了字体大小就没有必要一定是8的整数倍了。但是最好还是用双数设定大小。
+
+比方说：
+
+8px 16px 32px 40px 48px 56px 64px ... 谁用谁知道，这样的比例不但好看，关键是对布局很是友好。

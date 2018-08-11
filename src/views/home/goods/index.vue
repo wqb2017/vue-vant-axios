@@ -1,10 +1,10 @@
 <template>
   <div class="goods">
-    <h3 class="goods-title">每日推荐</h3>
+    <h3 class="goods-title">推荐列表</h3>
     <ul class="goods-list">
       <li class="goods-list-item" v-for="(item,index) in getProductListDatas" :key="index">
         <div class="goods-list-item__img">
-          <img :src="imgServerBaseURL(item.home_img)" alt="">
+          <img :src="imgURL(item.home_img)" alt="">
         </div>
         <div class="goods-list-item__desc">
           <p class="label">
@@ -28,20 +28,35 @@ export default {
       getProductListDatas: []
     };
   },
+  watch: {
+    '$store.state.home.goodsProducttype' () {
+      this.getProductList();
+    }
+  },
   mounted () {
-    this.$createRequestHttp('/product/getProductList', {
-      producttype: 1,
-      pageNumber: 1,
-      pageSize: 10
-    }).then((res) => {
-      if (res.data) {
-        this.getProductListDatas = res.data.list;
-      }
-    });
+    this.getProductList();
   },
   methods: {
-    imgServerBaseURL (file) {
-      return Utils.setImagesURL(file);
+    /**
+     * 图片
+     * @param {string} file 文件路径
+     */
+    imgURL (file) {
+      return Utils.parseFileURL(file);
+    },
+    /**
+     * 每日推荐列表
+     */
+    getProductList () {
+      this.$createRequestHttp('/product/getProductList', {
+        producttype: this.$store.state.home.goodsProducttype,
+        pageNumber: 1,
+        pageSize: 10
+      }).then((res) => {
+        if (res.data) {
+          this.getProductListDatas = res.data.list;
+        }
+      });
     }
   }
 };
