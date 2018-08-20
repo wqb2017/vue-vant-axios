@@ -1,0 +1,18 @@
+.floor{
+  padding: 0.08rem 0;
+  .list{
+    &-item{
+      width: 20%;
+      text-align: center;
+      margin: 0 auto 0.16rem;
+      float: left;
+      .img{
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+      .label{
+        font-size: 0.14rem;
+      }
+    }
+  }
+}

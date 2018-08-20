@@ -19,6 +19,22 @@ export default [
         }
       },
       {
+        path: '/classify',
+        name: 'Classify',
+        component: _import('classify'),
+        meta: {
+          title: '分类'
+        }
+      },
+      {
+        path: '/shopcart',
+        name: 'Shopcart',
+        component: _import('shopcart'),
+        meta: {
+          title: '购物车'
+        }
+      },
+      {
         path: '/mime',
         name: 'Mime',
         component: _import('mime'),

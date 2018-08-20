@@ -1,11 +1,18 @@
 <template>
   <div class="home">
-   home
+   <TheSlider></TheSlider>
+   <TheFloor></TheFloor>
   </div>
 </template>
 <script>
+import TheSlider from './slider';
+import TheFloor from './floor';
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    TheSlider,
+    TheFloor
+  }
 };
 </script>
 
