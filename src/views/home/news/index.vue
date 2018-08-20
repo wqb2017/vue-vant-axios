@@ -14,11 +14,15 @@ export default {
   data () {
     return {
       active: 0,
-      dataList: dataList
+      dataList: dataList,
+      timeoutFns: null
     };
   },
   mounted () {
     this.timerToggle();
+  },
+  beforeDestroy () {
+    clearTimeout(this.timeoutFns);
   },
   methods: {
     /**
