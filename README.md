@@ -1,4 +1,4 @@
-# vue-vant-axios
+# 重头开发写一个京东APP
 
 ## demo
   ![](./dosc/images/3.demo.gif)

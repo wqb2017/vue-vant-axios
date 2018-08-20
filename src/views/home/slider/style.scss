@@ -10,17 +10,19 @@
       &.is-active {
         display: block;
       }
-      .link,.img {
+      .link,
+      .img {
         height: 100%;
         width: 100%;
       }
     }
-  }.key{
+  }
+  .key {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0.1rem;
-    &-item{
+    &-item {
       float: left;
       width: 0.06rem;
       height: 0.06rem;
@@ -28,7 +30,7 @@
       border-radius: 50%;
       margin: 0.04rem;
       font-size: 0.1rem;
-      &.is-active{
+      &.is-active {
         background: #ddd;
       }
     }

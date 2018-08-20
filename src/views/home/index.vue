@@ -1,17 +1,20 @@
 <template>
   <div class="home">
    <TheSlider></TheSlider>
-   <TheFloor></TheFloor>
+   <TheSubmenu></TheSubmenu>
+   <TheNews></TheNews>
   </div>
 </template>
 <script>
 import TheSlider from './slider';
-import TheFloor from './floor';
+import TheSubmenu from './submenu';
+import TheNews from './news';
 export default {
   name: 'Home',
   components: {
     TheSlider,
-    TheFloor
+    TheNews,
+    TheSubmenu
   }
 };
 </script>

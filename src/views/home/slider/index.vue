@@ -1,8 +1,8 @@
 /*
  * @Author: WangQiBiao
  * @Date: 2018-08-20 12:03:17
- * @Last Modified by:   WangQiBiao
- * @Last Modified time: 2018-08-20 12:03:17
+ * @Last Modified by: WangQiBiao
+ * @Last Modified time: 2018-08-20 16:01:45
  */
 <template>
   <div class="slider">
@@ -31,16 +31,16 @@ export default {
     };
   },
   mounted () {
-    this.toggle();
+    this.timerToggle();
   },
   beforeDestroy () {
     clearTimeout(this.timeoutFns);
   },
   methods: {
     /**
-     * 切换
+     * 定时器切换
      */
-    toggle () {
+    timerToggle () {
       clearTimeout(this.timeoutFns);
       this.timeoutFns = setTimeout(() => {
         /**
@@ -51,8 +51,8 @@ export default {
         } else {
           this.active = 0;
         }
-        this.toggle();
-      }, 1000);
+        this.timerToggle();
+      }, 5000);
     }
   }
 };
