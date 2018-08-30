@@ -94,11 +94,7 @@ Vue.use(Vant);
 ```
 
 * 引入移动端适配方案 rem
-
-```js
-// ./src/main.js
-import './assets/rem'; // ./src/assets/rem.js
-```
+[rem在移动端实战](https://github.com/wqb2017/vue-vant-axios/blob/v2.0.0/dosc/2.md)
 
 * 删除无用文件 HolleWord.vue 等
 * 新增页面 views/home views 包含所有的逻辑页面
