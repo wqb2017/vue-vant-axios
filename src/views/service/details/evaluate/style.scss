@@ -1,0 +1,88 @@
+@import '~@/assets/css/mixin.scss';
+.evaluate {
+  background: #ffff;
+  margin-bottom: .213333rem /* 8/37.5 */;
+  .infoWrapper {
+    font-size: 0.32rem;
+    padding: 0.426667rem;
+    border-bottom: .026667rem /* 1/37.5 */ solid #ddd;
+    .info {
+      @include clearfix;
+      .label {
+        float: left;
+        font-size: 0.373333rem;
+        .numm {
+          color: #bbc0cb;
+          font-size: 0.32rem;
+        }
+      }
+      .desc {
+        float: right;
+        color: #fc8a04;
+        position: relative;
+        .name {
+          padding-right: 0.64rem;
+        }
+        .van-icon {
+          position: absolute;
+          top: 0.106667rem;
+          right: 0;
+        }
+      }
+    }
+    .search {
+      @include clearfix;
+      &-item {
+        padding: .213333rem /* 8/37.5 */ .426667rem /* 16/37.5 */;
+        font-size: 0.32rem;
+        color: #626b77;
+        background: #e3f6ff;
+        border-radius: 0.666667rem;
+        float: left;
+        margin: .213333rem /* 8/37.5 */ .426667rem /* 16/37.5 */ 0 0;
+        &.is-active{
+          background: #64cdff;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .listsWrapper{
+    padding: .426667rem /* 16/37.5 */;
+    font-size: .32rem /* 12/37.5 */;
+    .lists{
+      &-item{
+        border-bottom: .026667rem /* 1/37.5 */ solid #ddd;
+        padding: .213333rem /* 8/37.5 */ 0;
+        &:first-child{
+          padding-top: 0;
+        }
+        &:last-child{
+          border: 0;
+        }
+        .label{
+          @include clearfix;
+          margin-bottom: .426667rem /* 16/37.5 */;
+          margin-top: .213333rem /* 8/37.5 */;
+          line-height: .266667rem /* 10/37.5 */;
+          .name{
+            float: left;
+            color: #333b46;
+          }
+          .ratelist{
+            float: right;
+            position: relative;
+            .tip{
+              width: .666667rem /* 25/37.5 */;
+              position: absolute;
+              top: .053333rem /* 2/37.5 */;
+              right: 2.666667rem /* 100/37.5 */;
+              color: #bbc0cb;
+              font-size: .32rem /* 12/37.5 */;
+            }
+          }
+        }
+      }
+    }
+  }
+}

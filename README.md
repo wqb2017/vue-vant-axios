@@ -1,39 +1,82 @@
-# 重头开发写一个京东APP
+# vue-tpl-cli
 
 ## demo
-  ![](./dosc/images/3.demo.gif)
+  ![](./dosc/images/1.gif)
+
+## 使用
+
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
+
+```bash
+$ npm install -g vue-cli
+$ vue init wqb2017/ec-vue-cli my-project-name
+$ cd my-project-name
+$ npm install
+$ npm run dev
+```
 
 ## 技术栈
 
-* vue
-* vue-router 路由
-* vant ui 库
-* axios ajax 库
-* scss css 预处理器
-* vuex 状态管理
+1. 主技术栈
 
-## 项目文件架构说明
+* [vue](https://github.com/vuejs/vue)
+* [vue-router](https://github.com/vuejs/vue-router)
+* [vuex](https://github.com/vuejs/vuex)
+* [es6](https://github.com/bevacqua/es6)
+* [es6 中文文档](https://github.com/ruanyf/es6tutorial)
+
+2. UI 技术栈
+
+* [pc 端 element-ui](https://github.com/ElemeFE/element)
+* [移动端 vant](https://github.com/youzan/vant)
+* axios
+
+3. 图标
+
+* [fontawesome](http://fontawesome.dashgame.com/)
+
+## 前端规范
+
+* [eslint standard](https://github.com/standard/standard/blob/master/docs/RULES-zhcn.md)
+
+## IDE
+
+* [vscode](https://code.visualstudio.com/Download)
+* [vscode 常用插件和配置](https://github.com/wqb2017/vscode-plugins)
+
+## 项目结构
 
 ```js
-|vue-vant-axios
-    |——src 源码文件
-      |——assets 公共资源
-      |——components 公共组件
-      |——router 路由
-      |——views 逻辑页面
-          |——home 首页
-            |——index.vue 模板
-            |——styles.scss 样式 可选
-            |——images 图片 可选
-            |——swipe
-              |——index.vue
-              |——style.scss
-              |——images
-          |——mime 主页
-            |——index.vue
-            |——style.scss
-            |——images
+|-项目名
+    |-build
+    |-config
+    |-src
+      |-components //公共组件
+      |-assets //公共模块
+      |-directives //自定义指令
+      |-filters //过滤器
+      |-mixins //mixins
+      |-router
+      |-store
+      |-views
+        |-components //业务公共组件
+          |-button
+            |-index.vue //入口
+            |-style.scss //样式
+            |-images //图片
+        |-home //首页
+          |-entry
+            |-index.vue 模块入口
+            |-style.scss
+            |-images
+          |-lists
+            |-index.vue // 列表页
+            |-style.scss
+            |-images
+      |-static //第三方插件
 ```
+
+# 历史记录
 
 ## v0.0.1
 

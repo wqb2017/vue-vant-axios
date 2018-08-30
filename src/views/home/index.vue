@@ -1,24 +1,10 @@
 <template>
   <div class="home">
-   <TheSlider></TheSlider>
-   <TheSubmenu></TheSubmenu>
-   <TheNews></TheNews>
+    <router-view/>
   </div>
 </template>
 <script>
-import TheSlider from './slider';
-import TheSubmenu from './submenu';
-import TheNews from './news';
 export default {
-  name: 'Home',
-  components: {
-    TheSlider,
-    TheNews,
-    TheSubmenu
-  }
+  name: 'Home'
 };
 </script>
-
-<style lang="scss" scoped>
-@import './style.scss';
-</style>

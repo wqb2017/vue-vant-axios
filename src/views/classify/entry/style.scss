@@ -1,0 +1,40 @@
+@import '~@/assets/css/function.scss';
+@import '~@/assets/css/mixin.scss';
+.entry {
+  .searchWrapper {
+    background: rgba(7, 139, 243, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: half(80px);
+    padding: 0 half(16px);
+    z-index: 999;
+    @include clearfix;
+    .selectbox{
+      float: left;
+      margin-right: half(32px);
+      position: relative;
+      color: #fff;
+      height: 100%;
+      line-height: half(80px);
+      width: half(240px);
+      .label{
+        max-width: half(180px);
+        margin-right: half(10px);
+        @include omit;
+        font-size: half(26px);
+        float: left;
+      }
+    }
+    .inputbox{
+      width: half(440px);
+      position: absolute;
+      right: half(16px);
+      top: half(10px);
+    }
+  }
+  .subnavWrapper{
+    margin-top: half(88px);
+  }
+}

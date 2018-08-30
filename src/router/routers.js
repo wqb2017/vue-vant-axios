@@ -1,47 +1,18 @@
-import _import from './_import';
+import home from './home';
+import classify from './classify';
+import release from './release';
+import news from './news';
+import mine from './mine';
+import service from './service';
+import notfound from './404';
 
 export default [
   {
-    path: '/',
-    redirect: 'home'
+    path: '*',
+    redirect: '404/entry'
   },
   {
     path: '/',
-    name: 'Layout',
-    component: _import('layout'),
-    children: [
-      {
-        path: '/home',
-        name: 'Home',
-        component: _import('home'),
-        meta: {
-          title: '首页'
-        }
-      },
-      {
-        path: '/classify',
-        name: 'Classify',
-        component: _import('classify'),
-        meta: {
-          title: '分类'
-        }
-      },
-      {
-        path: '/shopcart',
-        name: 'Shopcart',
-        component: _import('shopcart'),
-        meta: {
-          title: '购物车'
-        }
-      },
-      {
-        path: '/mime',
-        name: 'Mime',
-        component: _import('mime'),
-        meta: {
-          title: '个人中心'
-        }
-      }
-    ]
+    redirect: 'home/entry'
   }
-];
+].concat(home, classify, release, news, mine, service, notfound);

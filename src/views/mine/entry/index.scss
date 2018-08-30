@@ -1,0 +1,88 @@
+@import '~@/assets/css/function.scss';
+
+$paddingLeft: half(29px);
+#mineEntry {
+  .avatar-wrapper {
+    display: flex;
+    position: relative;
+    padding-left: $paddingLeft;
+    padding-top: half(73px);
+    height: half(330px);
+    background-image: url(http://placehold.it/750x330);
+    background-size: cover;
+    background-position: center;
+    img {
+      border: 1px solid #fff;
+      width: half(184px);
+      height: half(184px);
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: half(38px);
+    }
+    .user-info {
+      > span {
+        font-size: half(32px);
+        color: #ffffff;
+        margin-bottom: half(17px);
+      }
+    }
+    .setting {
+      position: absolute;
+      top: half(26px);
+      right: half(35px);
+      color: #fff;
+    }
+  }
+  .sub-nav {
+    display: flex;
+    height: half(200px);
+    background-color: #fff;
+    margin-bottom: half(10px);
+    padding: 0 half(100px);
+    .sub-nav-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .icon-wrapper {
+        position: relative;
+        .info {
+          width: half(30px);
+          height: half(30px);
+          font-size: half(20px);
+          color: #fff;
+          background-color: #ff0000;
+          border-radius: 50%;
+          text-align: center;
+          font-style: normal;
+          position: absolute;
+          /* prettier-ignore */
+          top: -6PX;
+          /* prettier-ignore */
+          right: -5PX;
+        }
+        img {
+          margin-bottom: 5px;
+          width: half(66px);
+        }
+      }
+      .text {
+        font-size: half(24px);
+      }
+    }
+  }
+  .list {
+    .account-item {
+      display: flex;
+      flex-wrap: wrap;
+      height: half(320px);
+      > li {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

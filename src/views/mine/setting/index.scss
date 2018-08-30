@@ -1,0 +1,43 @@
+@import '~@/assets/css/function.scss';
+
+#mineSetting {
+  padding-top: half(30px);
+  .van-cell__value {
+    font-size: half(28px);
+    color: #bbc0cb;
+  }
+  .van-cell__title {
+    font-size: half(32px);
+    color: #333b46;
+  }
+  .top-cell-group {
+    margin-bottom: half(30px);
+    .van-cell {
+      align-items: center;
+      justify-content: center;
+      .gender-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .van-switch--on {
+          background-color: #45adff;
+        }
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+  .help-cell-group {
+    margin-bottom: half(105px);
+  }
+  .sign-out-btn-wrapper {
+    padding: 0 half(30px);
+    .van-button {
+      background-color: #45adff;
+      border-radius: 8px;
+      font-size: half(28px);
+      color: #ffffff;
+    }
+  }
+}

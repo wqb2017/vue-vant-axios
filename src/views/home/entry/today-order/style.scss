@@ -1,0 +1,12 @@
+@import '~@/assets/css/mixin.scss';
+@import '~@/assets/css/function.scss';
+.todayOrder {
+  .title {
+    font-size: half(32px);
+    color: #333b46;
+    font-weight: 500;
+    background: #fff;
+    padding: half(28px) half(32px);
+    border-bottom: half(1px) solid #ddd;
+  }
+}

@@ -6,5 +6,5 @@
  * @returns
  */
 export function parseFileURL (file) {
-  return `${window.CONFIG.fileURL}${file}`;
+  return `${window.PLATFORM_CONFIG.fileURL}${file}`;
 }

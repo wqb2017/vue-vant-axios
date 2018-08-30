@@ -1,0 +1,39 @@
+@import '~@/assets/css/function.scss';
+@import '~@/assets/css/mixin.scss';
+.lists{
+  font-size: half(24px);
+  .item{
+    padding: 0 half(28px);
+    .title{
+      font-size: half(28px);
+      line-height: half(28px);
+      color: #333b46;
+      margin: half(28px) 0;
+    }
+    .body{
+      background: #fff;
+      .nav{
+        @include clearfix;
+        background: #fff;
+        &-item{
+          float: left;
+          width: 20%;
+          padding: half(48px) 0;
+          text-align: center;
+          .icon{
+            height: half(88px);
+            width: half(88px);
+            display: block;
+            margin: auto;
+          }
+          .label{
+            margin-top: half(16px);
+            font-size: half(22px);
+            color: #333b46;
+            line-height: half(18px);
+          }
+        }
+      }
+    }
+  }
+}

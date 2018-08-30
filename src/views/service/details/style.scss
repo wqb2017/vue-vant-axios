@@ -1,0 +1,105 @@
+@import '~@/assets/css/mixin.scss';
+.details{
+  .imgWrapper{
+    height: 6.4rem /* 240/37.5 */;
+    width: 100%;
+    position: relative;
+    .img{
+      height: 100%;
+      width: 100%;
+    }
+    .tips{
+      background: rgba(0, 0, 0, 0.4);
+      height: 1.2rem /* 45/37.5 */;
+      line-height: 1.2rem /* 45/37.5 */;
+      font-size: .373333rem /* 14/37.5 */;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 .426667rem /* 16/37.5 */;
+      color: #fff;
+      @include omit;
+    }
+  }
+  .timeWrapper{
+    height: 1.2rem /* 45/37.5 */;
+    line-height: 1.2rem /* 45/37.5 */;
+    background: #fff;
+    margin-bottom: .213333rem /* 8/37.5 */;
+    position: relative;
+    @include clearfix;
+    .price{
+      float: left;
+      font-size: .32rem /* 12/37.5 */;
+      color: #fc8a04;
+      text-indent: 1em;
+      line-height: 1.066667rem /* 40/37.5 */;
+      .num{
+        font-size: .64rem /* 24/37.5 */;
+      }
+    }
+    .label{
+      width: 1.733333rem /* 65/37.5 */;
+      float: right;
+      margin-right: 4.266667rem /* 160/37.5 */;
+      background: #fc8a04;
+      color: #fff;
+      font-size: .32rem /* 12/37.5 */;
+      text-align: center;
+      display: block;
+    }
+    .times{
+      background: #fecc66;
+      width: 4.266667rem /* 160/37.5 */;
+      font-size: .32rem /* 12/37.5 */;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .infoWrapper{
+    height: 1.866667rem /* 70/37.5 */;
+    background: #fff;
+    padding: 0 .426667rem /* 16/37.5 */;
+    margin-bottom: .213333rem /* 8/37.5 */;
+    .img{
+      height: 1.6rem /* 60/37.5 */;
+      width: 1.6rem /* 60/37.5 */;
+      border-radius: 50%;
+      float: left;
+      padding: .133333rem /* 5/37.5 */ 0;
+    }
+    .info{
+      margin-left: 1.813333rem /* 68/37.5 */;
+      font-size: .32rem /* 12/37.5 */;
+      color: #bbc0cb;
+      padding: .266667rem /* 10/37.5 */ 0;
+      position: relative;
+      .label{
+        font-size: .373333rem /* 14/37.5 */;
+        margin-bottom: .106667rem /* 4/37.5 */;
+        .name{
+          color: #333b46;
+          margin-right: .72rem /* 27/37.5 */;
+          line-height: .586667rem /* 22/37.5 */;
+        }
+      }
+      .address{
+        @include omit;
+        .fa{
+          font-size: .426667rem /* 16/37.5 */;
+          display: inline-block;
+          padding-right: .213333rem /* 8/37.5 */;
+        }
+      }
+      .tel{
+        position: absolute;
+        top: .693333rem /* 26/37.5 */;
+        right: .933333rem /* 35/37.5 */;
+      }
+    }
+  }
+}

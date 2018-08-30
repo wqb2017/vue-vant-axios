@@ -1,0 +1,51 @@
+@import '~@/assets/css/mixin.scss';
+.dets {
+  padding: 0.426667rem;
+  background: #fff;
+  color: #333b46;
+  font-size: .32rem /* 12/37.5 */;
+  >.title {
+    font-size: 0.373333rem;
+    padding-bottom: .213333rem /* 8/37.5 */;
+    line-height: 0.373333rem;
+  }
+  .body {
+    padding-left: .426667rem /* 16/37.5 */;
+    >.desc{
+      padding-bottom: .106667rem /* 4/37.5 */;
+    }
+    .imgContent{
+      padding: 0 .213333rem /* 8/37.5 */;
+      .imgItem{
+        .title{
+          border-bottom: .026667rem /* 1/37.5 */ solid #ddd;
+          padding: .106667rem /* 4/37.5 */ 0;
+          @include clearfix;
+          .label{
+            float: left;
+          }
+          .desc{
+            float: right;
+          }
+        }
+        .imgList{
+          padding-top: .213333rem /* 8/37.5 */;
+          @include clearfix;
+          margin-left: -.213333rem /* 8/37.5 */;
+          &-item{
+            float: left;
+            width: 33.333%;
+            text-align: center;
+            padding-left: .213333rem /* 8/37.5 */;
+            padding-bottom: .213333rem /* 8/37.5 */;
+            box-sizing: border-box;
+            .img{
+              width: 100%;
+              height: 2.666667rem /* 100/37.5 */;
+            }
+          }
+        }
+      }
+    }
+  }
+}

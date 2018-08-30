@@ -1,0 +1,11 @@
+@import '~@/assets/css/function.scss';
+.banner {
+  height: half(280px);
+  .van-swipe{
+    height: 100%;
+    .img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

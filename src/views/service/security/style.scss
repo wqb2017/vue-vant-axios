@@ -1,0 +1,48 @@
+@import '~@/assets/css/mixin.scss';
+@import '~@/assets/css/function.scss';
+.security{
+  .van-tabs{
+    font-size: half(28px);
+    /deep/ .van-tab--active{
+      color: #fc8a04;
+    }
+    /deep/ .van-tabs__line{
+      background-color: #fc8a04;
+    }
+  }
+  .sortList{
+    margin-bottom: half(16px);
+    @include clearfix;
+    height: half(120px);
+    line-height: half(120px);
+    &-item{
+      background: #fff;
+      float: left;
+      width: 25%;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      color: #999faa;
+      .name{
+        font-size: half(28px);
+        color: #999faa;
+        float: left;
+        padding-left: 30%;
+      }
+      .search{
+        position: absolute;
+        top: half(54px);
+        left: half(120px);
+      }
+    }
+    .price{
+      .search{
+        top: half(48px);
+      }
+    }
+  }
+  .fa{
+    display: block;
+    line-height: half(12px);
+  }
+}

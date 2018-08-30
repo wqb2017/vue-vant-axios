@@ -1,0 +1,41 @@
+@import '~@/assets/css/mixin.scss';
+@import '~@/assets/css/function.scss';
+.menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-top: half(1px) solid #ddd;
+  .list {
+    @include clearfix;
+    padding: half(16px) 0;
+    &-item {
+      float: left;
+      width: 25%;
+      text-align: center;
+      .icon {
+        width: half(42px);
+        height: half(42px);
+        font-size: half(42px);
+        display: block;
+        margin: auto;
+        color: #999faa;
+      }
+      .label {
+        margin-top: half(10px);
+        color: #626b77;
+        font-size: half(20px);
+      }
+      .router-link-exact-active,
+      .router-link-active {
+        .icon {
+          color: #45adff;
+        }
+        .label {
+          color: #45adff;
+        }
+      }
+    }
+  }
+}

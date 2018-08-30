@@ -1,0 +1,30 @@
+@import '~@/assets/css/function.scss';
+
+#mineBill {
+  background-color: #fff;
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: half(27px) half(40px) 0;
+    .left {
+      display: flex;
+      flex-direction: column;
+      .type {
+        color: #333b46;
+        font-size: half(32px);
+        margin-bottom: half(22px);
+      }
+      .time {
+        color: #bfc7cc;
+        font-size: half(28px);
+      }
+    }
+    .right {
+      color: #333b46;
+      font-size: half(32px);
+      &.active {
+        color: #45adff;
+      }
+    }
+  }
+}
