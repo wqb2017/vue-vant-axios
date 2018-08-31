@@ -31,7 +31,7 @@ export default {
             <i>￥</i>
             <span>{(detail.count * detail.money).toFixed(2)}</span>
           </span>
-          <span class="end-text"> 元(含保险)</span>
+          <span class="end-text">元(含保险)</span>
         </div>
         {needToolBar && (
           <div class="tool-bar">
