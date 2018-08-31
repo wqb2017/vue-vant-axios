@@ -24,7 +24,8 @@ export default {
         <div class="statistics van-hairline--bottom">
           共计 {detail.count} 件服务 合计：
           <span class="total">
-            <i>￥</i>{(detail.count * detail.money).toFixed(2)}
+            <i>￥</i>
+            {(detail.count * detail.money).toFixed(2)}
           </span>
           <span class="end-text"> 元(含保险)</span>
         </div>

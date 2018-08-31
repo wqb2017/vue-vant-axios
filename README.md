@@ -1,4 +1,4 @@
-# vue-tpl-cli
+# vue+vantui+vue-router+axios+vuex
 
 ## demo
   ![](./dosc/images/1.gif)
