@@ -3,7 +3,7 @@
     <van-tabs>
       <van-tab v-for="(item,index) in subnavList" :title="item.label" :key="index">
         <ul class="sortList">
-          <li class="sortList-item synthesize">
+          <li class="sortList-item synthesize is-active">
             <div class="name">综合</div>
             <div class="search">
               <i class="fa fa-caret-down"></i>
@@ -67,7 +67,7 @@ export default {
           id: 5
         },
         {
-          label: '私人保安',
+          label: '私人保镖',
           id: 5
         }
       ],

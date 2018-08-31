@@ -1,0 +1,62 @@
+@import '~@/assets/css/function.scss';
+@import '~@/assets/css/variable.scss';
+#orderDetail {
+  color: $font-color-black;
+  padding-bottom: half(28px);
+  .status-bar {
+    height: half(115px);
+    background-color: #45adff;
+    font-size: half(28px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: half(59px);
+    .status-icon {
+      margin-right: half(17px);
+    }
+  }
+  .location {
+    padding-top: half(26px);
+    padding-left: half(59px);
+    font-size: half(26px);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    .van-icon {
+      color: #fe6262;
+      margin-right: half(15px);
+    }
+  }
+  .steps {
+    padding-left: 50px;
+    margin-bottom: half(19px);
+    .text,
+    .time {
+      color: #bbc0cb;
+      font-size: half(22px);
+      &.active {
+        color: $font-color-black;
+        font-size: half(24px);
+      }
+    }
+  }
+  .footer {
+    margin-top: half(10px);
+    background-color: #fff;
+    padding: half(27px) half(28px);
+    display: flex;
+    flex-direction: column;
+    font-size: half(24px);
+    color: #626b77;
+    position: relative;
+    .copy {
+      width: half(120px);
+      height: half(44px);
+      line-height: half(44px);
+      color: #626b77;
+      position: absolute;
+      top: half(9px);
+      right: half(30px);
+    }
+  }
+}

@@ -12,8 +12,7 @@
             <p class="desc">服务时长：{{item.duration}}</p>
             <EcIps></EcIps>
             <p class="price">￥
-              <span class="total">{{item.price}}/</span>
-              <span>{{item.unit}}</span>
+              <span class="total">{{item.price}}</span>
             </p>
           </div>
         </router-link>

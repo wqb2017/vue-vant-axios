@@ -1,0 +1,80 @@
+@import '~@/assets/css/mixin.scss';
+.citySelected {
+  color: #999faa;
+  .searchWrapper {
+    padding: 0.213333rem 0.426667rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+    .van-search {
+      /deep/ .van-cell {
+        border-radius: 0.213333rem;
+        height: 0.8rem;
+      }
+    }
+  }
+  .currentWrapper {
+    margin-top: 1.333333rem /* 50/37.5 */;
+    /deep/ .van-cell {
+      background: #f1f1f1;
+      color: #999faa;
+      font-size: 0.373333rem;
+      padding-bottom: 0;
+    }
+    .desc {
+      color: #fc8a04;
+      font-size: 0.426667rem;
+    }
+  }
+  .boxWrapper{
+    color: #999faa;
+    padding: 0 .426667rem /* 16/37.5 */;
+    margin-top: .426667rem /* 16/37.5 */;
+    .title{
+      font-size: .32rem /* 12/37.5 */;
+      margin-bottom: .32rem /* 12/37.5 */;
+    }
+    .lists{
+      @include clearfix;
+      &-item{
+        height: 1.066667rem /* 40/37.5 */;
+        line-height: 1.066667rem /* 40/37.5 */;
+        padding: 0 .64rem /* 24/37.5 */;
+        margin-right: .213333rem /* 8/37.5 */;
+        margin-bottom: .213333rem /* 8/37.5 */;
+        background: #fff;
+        color: #333b46;
+        font-size: .32rem /* 12/37.5 */;
+        float: left;
+      }
+    }
+  }
+  .spellSearchWrapper{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    .spell{
+      &-item{
+        font-size: .266667rem /* 10/37.5 */;
+        line-height: .32rem /* 12/37.5 */;
+        padding-bottom: .213333rem /* 8/37.5 */;
+        color: #333b46;
+      }
+    }
+  }
+  .searchListWrapper{
+    padding: 0 .426667rem /* 16/37.5 */;
+    .item{
+      padding: .426667rem /* 16/37.5 */ 0;
+      border-bottom: 1px solid #ddd;
+      font-size: .373333rem /* 14/37.5 */;
+      color: #333b46;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import '~@/assets/css/function.scss';
+@import '~@/assets/css/variable.scss';
 
 #mineSetting {
   padding-top: half(30px);
@@ -8,7 +9,7 @@
   }
   .van-cell__title {
     font-size: half(32px);
-    color: #333b46;
+    color: $font-color-black;
   }
   .top-cell-group {
     margin-bottom: half(30px);

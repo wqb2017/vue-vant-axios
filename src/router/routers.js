@@ -1,10 +1,12 @@
-import home from './home';
+import address from './address';
 import classify from './classify';
-import release from './release';
-import news from './news';
+import home from './home';
 import mine from './mine';
-import service from './service';
+import news from './news';
 import notfound from './404';
+import order from './order';
+import release from './release';
+import service from './service';
 
 export default [
   {
@@ -15,4 +17,4 @@ export default [
     path: '/',
     redirect: 'home/entry'
   }
-].concat(home, classify, release, news, mine, service, notfound);
+].concat(home, classify, release, news, mine, service, notfound, order, address);

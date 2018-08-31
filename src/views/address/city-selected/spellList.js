@@ -1,0 +1,30 @@
+export default {
+  list: [
+    {label: 'A', id: 'A'},
+    {label: 'B', id: 'B'},
+    {label: 'C', id: 'C'},
+    {label: 'D', id: 'D'},
+    {label: 'E', id: 'E'},
+    {label: 'F', id: 'F'},
+    {label: 'G', id: 'G'},
+    {label: 'H', id: 'H'},
+    {label: 'I', id: 'I'},
+    {label: 'J', id: 'J'},
+    {label: 'K', id: 'K'},
+    {label: 'L', id: 'L'},
+    {label: 'M', id: 'M'},
+    {label: 'N', id: 'N'},
+    {label: 'O', id: 'O'},
+    {label: 'P', id: 'P'},
+    {label: 'Q', id: 'Q'},
+    {label: 'R', id: 'R'},
+    {label: 'S', id: 'S'},
+    {label: 'T', id: 'T'},
+    {label: 'U', id: 'U'},
+    {label: 'V', id: 'V'},
+    {label: 'W', id: 'W'},
+    {label: 'X', id: 'X'},
+    {label: 'Y', id: 'Y'},
+    {label: 'Z', id: 'Z'}
+  ]
+};

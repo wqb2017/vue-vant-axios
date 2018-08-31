@@ -94,8 +94,6 @@ Vue.use(Vant);
 ```
 
 * 引入移动端适配方案 rem
-[rem在移动端实战](https://github.com/wqb2017/vue-vant-axios/blob/master/dosc/2.md)
-
 * 删除无用文件 HolleWord.vue 等
 * 新增页面 views/home views 包含所有的逻辑页面
 
@@ -172,6 +170,8 @@ $ npm install babel-polyfill --save
 1. 安装
 
 $ npm install postcss-pxtorem --save-dev
+
+[rem在移动端实战](https://github.com/wqb2017/vue-vant-axios/blob/master/dosc/2.md)
 
 2. 引入
 
@@ -332,3 +332,8 @@ this.$store.state.home.goodsProducttype
 比方说：
 
 8px 16px 32px 40px 48px 56px 64px ... 谁用谁知道，这样的比例不但好看，关键是对布局很是友好。
+
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)

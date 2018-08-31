@@ -2,7 +2,7 @@
 @import '~@/assets/css/mixin.scss';
 .entry {
   .searchWrapper {
-    background: rgba(7, 139, 243, .2);
+    background: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,10 +15,9 @@
       float: left;
       margin-right: half(32px);
       position: relative;
-      color: #fff;
       height: 100%;
       line-height: half(80px);
-      width: half(240px);
+      color: #333b46;
       .label{
         max-width: half(180px);
         margin-right: half(10px);
@@ -28,10 +27,15 @@
       }
     }
     .inputbox{
-      width: half(440px);
+      width: half(580px);
       position: absolute;
       right: half(16px);
       top: half(10px);
+      .van-search {
+        /deep/ .van-cell{
+          border: 1px solid #999faa;
+        }
+      }
     }
   }
   .subnavWrapper{

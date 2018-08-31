@@ -58,7 +58,7 @@ export default {
   created () {},
   methods: {
     goToMyOrder () {
-      this.$router.push({ name: 'mineOrder' });
+      this.$router.push({ name: 'OrderList' });
     }
   }
 };

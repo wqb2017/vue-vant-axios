@@ -12,8 +12,7 @@
             <p class="desc">服务时长：{{item.duration}}</p>
             <p class="desc">服务地点：{{item.address}}</p>
             <p class="price">￥
-              <span class="total">{{item.price}}/</span>
-              <span>{{item.unit}}</span>
+              <span class="total">{{item.price}}</span>
             </p>
           </div>
         </router-link>

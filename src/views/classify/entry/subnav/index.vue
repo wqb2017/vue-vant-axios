@@ -22,7 +22,7 @@
       <li class="nav-item">
         <router-link :to="{path: '/service/security', query:{id : '4'}}" tag="div">
           <img class="icon" src="https://via.placeholder.com/88x88" alt="">
-          <p class="label">维修服务</p>
+          <p class="label">保修服务</p>
         </router-link>
       </li>
     </ul>

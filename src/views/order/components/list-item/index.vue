@@ -1,9 +1,13 @@
 <script>
 export default {
   functional: true,
-  props: ['detail'],
+  props: {
+    detail: { type: Object, default: () => ({}) },
+    descClick: { type: Function, default: () => {} },
+    needToolBar: { type: Boolean }
+  },
   render (h, { props }) {
-    const { detail } = props;
+    const { detail, descClick, needToolBar } = props;
     return (
       <div id="listItem">
         <div class="top">
@@ -11,7 +15,7 @@ export default {
           <span class="userName">{detail.userName}</span>
           <span class="status">{detail.statusName}</span>
         </div>
-        <div class="desc">
+        <div class="desc" onClick={descClick}>
           <img src={detail.servericeImgUrl} />
           <div class="right">
             <h6 class="title van-ellipsis">{detail.servericeName}</h6>
@@ -24,13 +28,16 @@ export default {
         <div class="statistics van-hairline--bottom">
           共计 {detail.count} 件服务 合计：
           <span class="total">
-            <i>￥</i>{(detail.count * detail.money).toFixed(2)}
+            <i>￥</i>
+            <span>{(detail.count * detail.money).toFixed(2)}</span>
           </span>
           <span class="end-text"> 元(含保险)</span>
         </div>
-        <div class="tool-bar">
-          <van-button type="primary">接单</van-button>
-        </div>
+        {needToolBar && (
+          <div class="tool-bar">
+            <van-button type="primary">接单</van-button>
+          </div>
+        )}
       </div>
     );
   }
@@ -38,6 +45,7 @@ export default {
 </script>
 <style lang="scss">
 @import '~@/assets/css/function.scss';
+@import '~@/assets/css/variable.scss';
 
 $paddingLeftAndRight: half(27px);
 #listItem {
@@ -81,10 +89,12 @@ $paddingLeftAndRight: half(27px);
       .title {
         max-width: half(474px);
         font-size: half(28px);
+        color: $font-color-black;
       }
       .money {
         align-self: flex-end;
         font-size: half(28px);
+        color: $font-color-black;
       }
     }
   }

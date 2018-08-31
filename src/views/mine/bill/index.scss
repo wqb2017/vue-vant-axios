@@ -1,4 +1,5 @@
 @import '~@/assets/css/function.scss';
+@import '~@/assets/css/variable.scss';
 
 #mineBill {
   background-color: #fff;
@@ -10,7 +11,7 @@
       display: flex;
       flex-direction: column;
       .type {
-        color: #333b46;
+        color: $font-color-black;
         font-size: half(32px);
         margin-bottom: half(22px);
       }
@@ -20,7 +21,7 @@
       }
     }
     .right {
-      color: #333b46;
+      color: $font-color-black;
       font-size: half(32px);
       &.active {
         color: #45adff;

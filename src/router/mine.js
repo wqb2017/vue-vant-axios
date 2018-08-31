@@ -29,12 +29,6 @@ export default [
             name: 'mineBill',
             component: _import('mine/bill'),
             meta: { title: '进出明细' }
-          },
-          {
-            path: 'order',
-            name: 'mineOrder',
-            component: _import('mine/order'),
-            meta: { title: '我的订单' }
           }
         ]
       }

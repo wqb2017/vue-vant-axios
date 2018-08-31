@@ -27,10 +27,12 @@
             margin: auto;
           }
           .label{
+            @include omit;
             margin-top: half(16px);
-            font-size: half(22px);
+            font-size: half(20px);
             color: #333b46;
             line-height: half(18px);
+            line-height: half(32px);
           }
         }
       }
