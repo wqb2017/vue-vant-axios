@@ -30,7 +30,7 @@
           </li>
         </ul>
         <div class="list">
-          <TheLists :data="serviceList.list"></TheLists>
+          <OrderListItem :data="serviceList.list"></OrderListItem>
         </div>
       </van-tab>
     </van-tabs>
@@ -38,10 +38,10 @@
 </template>
 <script>
 import datasList from './datas.js';
-import TheLists from './lists';
+import OrderListItem from '@/views/components/order-list-item';
 export default {
   components: {
-    TheLists
+    OrderListItem
   },
   data () {
     return {

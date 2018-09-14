@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="subnavWrapper">
-      <TheSubnav></TheSubnav>
+      <Subnav></Subnav>
     </div>
     <div class="listsWrapper">
       <TheLists></TheLists>
@@ -20,11 +20,11 @@
   </div>
 </template>
 <script>
-import TheSubnav from './subnav';
+import Subnav from '@/views/components/subnav';
 import TheLists from './lists';
 export default {
   components: {
-    TheSubnav,
+    Subnav,
     TheLists
   },
   data () {

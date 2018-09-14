@@ -1,15 +1,15 @@
 <template>
   <div class="todayOrder">
     <h6 class="title">今日订单</h6>
-    <TheLists :data="serviceList.list"></TheLists>
+    <OrderListItem :data="serviceList.list"></OrderListItem>
   </div>
 </template>
 <script>
 import datasList from './datas.js';
-import TheLists from './lists';
+import OrderListItem from '@/views/components/order-list-item';
 export default {
   components: {
-    TheLists
+    OrderListItem
   },
   data () {
     return {

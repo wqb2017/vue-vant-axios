@@ -12,18 +12,18 @@
       </div>
     </div>
     <TheBanner></TheBanner>
-    <TheSubnav></TheSubnav>
+    <Subnav></Subnav>
     <TheTodayOrder></TheTodayOrder>
   </div>
 </template>
 <script>
 import TheBanner from './banner';
-import TheSubnav from './subnav';
+import Subnav from '@/views/components/subnav';
 import TheTodayOrder from './today-order';
 export default {
   components: {
     TheBanner,
-    TheSubnav,
+    Subnav,
     TheTodayOrder
   },
   data () {

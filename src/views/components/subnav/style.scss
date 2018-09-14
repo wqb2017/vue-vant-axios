@@ -5,10 +5,11 @@
   .nav{
     @include clearfix;
     background: #fff;
+    padding: half(48px) 0 half(32px);
     &-item{
       float: left;
       width: 25%;
-      padding: half(48px) 0;
+      margin-bottom: 16px;
       text-align: center;
       .icon{
         height: half(88px);

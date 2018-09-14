@@ -15,10 +15,11 @@
       .nav{
         @include clearfix;
         background: #fff;
+        padding: half(48px) 0 half(32px);
         &-item{
           float: left;
           width: 20%;
-          padding: half(48px) 0;
+          margin-bottom: .426667rem /* 16/37.5 */;
           text-align: center;
           .icon{
             height: half(88px);
