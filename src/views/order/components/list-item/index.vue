@@ -26,7 +26,7 @@ export default {
           </div>
         </div>
         <div class="statistics van-hairline--bottom">
-          共计 {detail.count} 件服务 合计：
+          <span>共计 {detail.count} 件服务 合计：</span>
           <span class="total">
             <i>￥</i>
             <span>{(detail.count * detail.money).toFixed(2)}</span>

@@ -8,12 +8,11 @@
   background: #fff;
   border-top: half(1px) solid #ddd;
   .list {
-    @include clearfix;
+    display: flex;
     padding: half(16px) 0;
     &-item {
-      float: left;
-      width: 25%;
       text-align: center;
+      flex: 1;
       .icon {
         width: half(42px);
         height: half(42px);

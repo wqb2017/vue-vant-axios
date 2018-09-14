@@ -13,12 +13,6 @@
           <p class="label">分类</p>
         </router-link>
       </li>
-      <li class="list-item release">
-        <router-link :to="{path:'/release/entry'}" tag="div">
-          <i class="icon fa fa-send"></i>
-          <p class="label">发布</p>
-        </router-link>
-      </li>
       <li class="list-item mine">
         <router-link :to="{path:'/mine/entry'}" tag="div">
           <i class="icon fa fa-user-o"></i>
