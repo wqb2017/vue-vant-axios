@@ -3,7 +3,6 @@ import _import from './_import';
 export default [
   {
     path: '/service',
-    name: 'service',
     component: _import('service'),
     meta: {
       title: '服务'
@@ -11,7 +10,6 @@ export default [
     children: [
       {
         path: 'security',
-        name: 'security',
         component: _import('service/security'),
         meta: {
           title: '保安服务'
@@ -19,7 +17,6 @@ export default [
       },
       {
         path: 'list-search',
-        name: 'list-search',
         component: _import('service/list-search'),
         meta: {
           title: '服务查询'
@@ -27,7 +24,6 @@ export default [
       },
       {
         path: 'details',
-        name: 'ServiceDetails',
         component: _import('service/details'),
         meta: {
           title: '服务详情'

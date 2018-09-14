@@ -7,7 +7,6 @@ export default [
     children: [
       {
         path: '/news',
-        name: 'News',
         component: _import('news'),
         meta: {
           title: '消息'
@@ -15,7 +14,6 @@ export default [
         children: [
           {
             path: 'entry',
-            name: 'newsEntry',
             component: _import('news/entry')
           }
         ]

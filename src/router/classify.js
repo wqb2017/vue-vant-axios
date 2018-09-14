@@ -7,12 +7,10 @@ export default [
     children: [
       {
         path: '/classify',
-        name: 'Classify',
         component: _import('classify'),
         children: [
           {
             path: 'entry',
-            name: 'classifyEntry',
             component: _import('classify/entry'),
             meta: {
               title: '分类'

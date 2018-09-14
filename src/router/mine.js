@@ -16,7 +16,10 @@ export default [
           {
             path: 'entry',
             name: 'mineEntry',
-            component: _import('mine/entry')
+            component: _import('mine/entry'),
+            meta: {
+              title: '我的'
+            }
           },
           {
             path: 'setting',
