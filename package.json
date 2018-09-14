@@ -10,6 +10,16 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vant",
+    "axios",
+    "html5",
+    "javscript",
+    "移动端",
+    "仿商城"
+  ],
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
