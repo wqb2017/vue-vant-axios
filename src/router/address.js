@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 // 地址选择
 export default [
   {
@@ -14,4 +14,4 @@ export default [
       }
     ]
   }
-];
+]

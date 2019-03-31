@@ -25,9 +25,9 @@ export default {
           name: 'logo'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

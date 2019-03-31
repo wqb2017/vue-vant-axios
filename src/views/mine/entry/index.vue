@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div id="mineEntry">
     <div class="avatar-wrapper">
       <img src="http://placehold.it/184x184">
@@ -51,17 +51,17 @@ export default {
             </div>
             <span class="text">{this.$slots.default}</span>
           </div>
-        );
+        )
       }
     }
   },
   created () {},
   methods: {
     goToMyOrder () {
-      this.$router.push({ name: 'OrderList' });
+      this.$router.push({ name: 'OrderList' })
     }
   }
-};
+}
 </script>
 
 <style lang="scss" src='./index.scss'></style>

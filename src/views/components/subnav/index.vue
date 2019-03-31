@@ -65,8 +65,8 @@ export default {
           id: '8'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

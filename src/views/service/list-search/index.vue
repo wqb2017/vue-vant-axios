@@ -12,13 +12,13 @@ export default {
   data () {
     return {
       searchValue: ''
-    };
+    }
   },
   methods: {
     goBack () {
-      this.$router.go(-1);
+      this.$router.go(-1)
     }
   }
-};
+}
 </script>
 <style lang="scss" src="./style.scss"></style>

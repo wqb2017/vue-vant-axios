@@ -16,14 +16,14 @@
   </div>
 </template>
 <script>
-import dataList from './datas.js';
+import dataList from './datas.js'
 export default {
   data () {
     return {
       dataList: dataList
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

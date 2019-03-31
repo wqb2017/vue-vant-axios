@@ -7,7 +7,7 @@ export default {
     needToolBar: { type: Boolean }
   },
   render (h, { props }) {
-    const { detail, descClick, needToolBar } = props;
+    const { detail, descClick, needToolBar } = props
     return (
       <div id="listItem">
         <div class="top">
@@ -39,9 +39,9 @@ export default {
           </div>
         )}
       </div>
-    );
+    )
   }
-};
+}
 </script>
 <style lang="scss">
 @import '~@/assets/css/function.scss';

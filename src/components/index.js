@@ -1,4 +1,4 @@
-import EcIps from './ec-ips';
+import EcIps from './ec-ips'
 export default {
   EcIps
-};
+}

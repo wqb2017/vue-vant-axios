@@ -1,15 +1,24 @@
+<!--
+ * @Author: WangQiBiao
+ * @LastEditors: WangQiBiao
+ * @Description:
+ * @Date: 2019-03-31 13:41:09
+ * @LastEditTime: 2019-03-31 14:00:09
+ -->
 <template>
   <div id="OrderList">
     <van-tabs v-model="currentStatus" sticky>
       <van-tab v-for="(item,index) in statusList" :title="item.name" :key="item.value">
-        <listItem v-if="index === currentStatus" v-for="order in orderList" needToolBar :key="order.id" :detail='order' :descClick='goToOrderDetail' />
+        <template  v-if="index === currentStatus">
+          <listItem v-for="order in orderList" needToolBar :key="order.id" :detail='order' :descClick='goToOrderDetail' />
+        </template>
       </van-tab>
     </van-tabs>
   </div>
 </template>
 
 <script>
-import listItem from '../components/list-item';
+import listItem from '../components/list-item'
 export default {
   components: {
     listItem
@@ -86,14 +95,14 @@ export default {
           money: 120
         }
       ]
-    };
+    }
   },
   methods: {
     goToOrderDetail () {
-      this.$router.push({ name: 'OrderDetail' });
+      this.$router.push({ name: 'OrderDetail' })
     }
   }
-};
+}
 </script>
 
 <style lang="scss" src='./index.scss'></style>

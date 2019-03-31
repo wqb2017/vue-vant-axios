@@ -33,13 +33,13 @@
   </div>
 </template>
 <script>
-import TheEvaluate from './evaluate';
-import TheServiceDetails from './service-details';
+import TheEvaluate from './evaluate'
+import TheServiceDetails from './service-details'
 export default {
   components: {
     TheEvaluate,
     TheServiceDetails
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

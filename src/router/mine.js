@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 // 我的
 export default [
   {
@@ -37,4 +37,4 @@ export default [
       }
     ]
   }
-];
+]

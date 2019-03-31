@@ -20,8 +20,8 @@
   </div>
 </template>
 <script>
-import Subnav from '@/views/components/subnav';
-import TheLists from './lists';
+import Subnav from '@/views/components/subnav'
+import TheLists from './lists'
 export default {
   components: {
     Subnav,
@@ -30,13 +30,13 @@ export default {
   data () {
     return {
       searchValue: ''
-    };
+    }
   },
   methods: {
     focus () {
-      this.$router.push({path: '/service/list-search'});
+      this.$router.push({path: '/service/list-search'})
     }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

@@ -49,8 +49,8 @@ export default {
   data () {
     return {
       rateValue: 3
-    };
+    }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

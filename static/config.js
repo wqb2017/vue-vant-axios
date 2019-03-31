@@ -1,3 +1,10 @@
+/*
+ * @Author: WangQiBiao
+ * @LastEditors: WangQiBiao
+ * @Description: 
+ * @Date: 2019-03-31 13:41:09
+ * @LastEditTime: 2019-03-31 13:46:39
+ */
 /* eslint-disable */
 /**
  * 配置信息
@@ -21,4 +28,4 @@ PLATFORM_CONFIG.fileUrl = 'http://xxx.xxx.x.xx/stif_fs/';
 PLATFORM_CONFIG.fileUpClient = PLATFORM_CONFIG.fileUrl + 'upClient';
 PLATFORM_CONFIG.fileImage = PLATFORM_CONFIG.fileUrl + 'image';
 //平台标识
-PLATFORM_CONFIG.platformFlag = 'partner_';
+PLATFORM_CONFIG.platformFlag = 'vue-vant-axios_';

@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 // 服务
 export default [
   {
@@ -31,4 +31,4 @@ export default [
       }
     ]
   }
-];
+]

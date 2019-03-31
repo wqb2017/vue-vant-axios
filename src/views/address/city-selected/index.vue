@@ -35,7 +35,7 @@
   </div>
 </template>
 <script>
-import spellList from './spellList.js';
+import spellList from './spellList.js'
 export default {
   data () {
     return {
@@ -56,8 +56,8 @@ export default {
         {label: '深圳', id: 'shenzhen'},
         {label: '深圳', id: 'shenzhen'}
       ]
-    };
+    }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

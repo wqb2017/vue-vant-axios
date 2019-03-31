@@ -1,3 +1,10 @@
+<!--
+ * @Author: WangQiBiao
+ * @LastEditors: WangQiBiao
+ * @Description:
+ * @Date: 2019-03-31 13:41:08
+ * @LastEditTime: 2019-03-31 13:58:25
+ -->
 # vue+vantui+vue-router+axios+vuex
 
 ## demo
@@ -332,6 +339,29 @@ this.$store.state.home.goodsProducttype
 比方说：
 
 8px 16px 32px 40px 48px 56px 64px ... 谁用谁知道，这样的比例不但好看，关键是对布局很是友好。
+
+## eslint + vscode做保存自动代码格式化
+
+安装以下插件
+
+* eslint-plugin-cypress
+* eslint-plugin-html
+* eslint-plugin-vue
+
+在 package.json 加入一下代码
+
+```js
+"lint-staged": {
+  "*.js": [
+    "vue-cli-service lint",
+    "git add"
+  ],
+  "*.vue": [
+    "vue-cli-service lint",
+    "git add"
+  ]
+}
+```
 
 
 ## License

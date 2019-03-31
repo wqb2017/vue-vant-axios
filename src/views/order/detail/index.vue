@@ -44,7 +44,7 @@
   </div>
 </template>
 <script>
-import listItem from '../components/list-item';
+import listItem from '../components/list-item'
 export default {
   components: {
     listItem
@@ -66,9 +66,9 @@ export default {
         count: 2,
         money: 120
       }
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" src='./index.scss'></style>

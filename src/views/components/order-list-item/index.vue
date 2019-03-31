@@ -24,10 +24,10 @@ export default {
     data: {
       type: Array,
       default () {
-        return [];
+        return []
       }
     }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

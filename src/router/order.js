@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 export default [
   {
     path: '/',
@@ -25,4 +25,4 @@ export default [
       }
     ]
   }
-];
+]

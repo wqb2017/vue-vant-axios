@@ -37,8 +37,8 @@
   </div>
 </template>
 <script>
-import datasList from './datas.js';
-import OrderListItem from '@/views/components/order-list-item';
+import datasList from './datas.js'
+import OrderListItem from '@/views/components/order-list-item'
 export default {
   components: {
     OrderListItem
@@ -72,8 +72,8 @@ export default {
         }
       ],
       serviceList: datasList
-    };
+    }
   }
-};
+}
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

@@ -1,1 +1,1 @@
-export default file => () => import('@/views/' + file + '/index.vue');
+export default file => () => import('@/views/' + file + '/index.vue')

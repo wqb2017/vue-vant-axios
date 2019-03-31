@@ -1,3 +1,10 @@
+<!--
+ * @Author: WangQiBiao
+ * @LastEditors: WangQiBiao
+ * @Description:
+ * @Date: 2019-03-31 13:41:09
+ * @LastEditTime: 2019-03-31 13:55:24
+ -->
 <template>
   <div class="entry">
     <div class="searchWrapper">
@@ -17,9 +24,9 @@
   </div>
 </template>
 <script>
-import TheBanner from './banner';
-import Subnav from '@/views/components/subnav';
-import TheTodayOrder from './today-order';
+import TheBanner from './banner'
+import Subnav from '@/views/components/subnav'
+import TheTodayOrder from './today-order'
 export default {
   components: {
     TheBanner,
@@ -30,13 +37,13 @@ export default {
     return {
       address: '财富港大夏D座财富港大夏D座',
       searchValue: ''
-    };
+    }
   },
   methods: {
     focus () {
-      this.$router.push({path: '/service/list-search'});
+      this.$router.push({path: '/service/list-search'})
     }
   }
-};
+}
 </script>
 <style lang="scss" src="./style.scss"></style>

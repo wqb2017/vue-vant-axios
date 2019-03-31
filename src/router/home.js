@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 // 首页
 export default [
   {
@@ -20,4 +20,4 @@ export default [
       }
     ]
   }
-];
+]

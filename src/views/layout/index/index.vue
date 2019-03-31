@@ -7,12 +7,12 @@
   </div>
 </template>
 <script>
-import TheMenu from '@/views/components/menu';
+import TheMenu from '@/views/components/menu'
 export default {
   components: {
     TheMenu
   }
-};
+}
 </script>
 <style lang="scss" scoped>
 .index{

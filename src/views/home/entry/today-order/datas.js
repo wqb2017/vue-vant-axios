@@ -64,4 +64,4 @@ export default {
       unit: '起'
     }
   ]
-};
+}

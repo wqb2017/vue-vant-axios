@@ -6,41 +6,41 @@
  * @returns
  */
 export function parseFileURL (file) {
-  return `${window.PLATFORM_CONFIG.fileURL}${file}`;
+  return `${window.PLATFORM_CONFIG.fileURL}${file}`
 }
 export function throttle (delay, noTrailing, callback, debounceMode) {
-  var timeoutID;
-  var lastExec = 0;
+  var timeoutID
+  var lastExec = 0
   if (typeof noTrailing !== 'boolean') {
-    debounceMode = callback;
-    callback = noTrailing;
-    noTrailing = undefined;
+    debounceMode = callback
+    callback = noTrailing
+    noTrailing = undefined
   }
   function wrapper () {
-    var self = this;
-    var elapsed = Number(new Date()) - lastExec;
-    var args = arguments;
+    var self = this
+    var elapsed = Number(new Date()) - lastExec
+    var args = arguments
     function exec () {
-      lastExec = Number(new Date());
-      callback.apply(self, args);
+      lastExec = Number(new Date())
+      callback.apply(self, args)
     }
     function clear () {
-      timeoutID = undefined;
+      timeoutID = undefined
     }
     if (debounceMode && !timeoutID) {
-      exec();
+      exec()
     }
     if (timeoutID) {
-      clearTimeout(timeoutID);
+      clearTimeout(timeoutID)
     }
     if (debounceMode === undefined && elapsed > delay) {
-      exec();
+      exec()
     } else if (noTrailing !== true) {
       timeoutID = setTimeout(
         debounceMode ? clear : exec,
         debounceMode === undefined ? delay - elapsed : delay
-      );
+      )
     }
   }
-  return wrapper;
+  return wrapper
 }

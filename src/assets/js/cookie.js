@@ -8,18 +8,18 @@
 /**
  * 平台标识【用于区别同一名下设置和获取不同cookie值，解决同一浏览器同一域名获取信息错乱bug】
  */
-let PLATFORM_FLAG = window.PLATFORM_CONFIG.platformFlag;
+let PLATFORM_FLAG = window.PLATFORM_CONFIG.platformFlag
 /**
  * 浏览器是否禁用cookie
  * @param return 返回布尔值标识是否禁用，true禁用
  */
 function browserIsDisableCookie () {
-  let isCookie = window.document.cookie || window.navigator.cookieEnabled;
+  let isCookie = window.document.cookie || window.navigator.cookieEnabled
   if (!isCookie) {
-    console.error('浏览器cookie被禁用');
-    return false;
+    console.error('浏览器cookie被禁用')
+    return false
   } else {
-    return true;
+    return true
   }
 }
 export default {
@@ -30,19 +30,19 @@ export default {
    */
   get: function (name) {
     if (!browserIsDisableCookie()) {
-      return;
+      return
     }
-    let arrStr = document.cookie.split('; ');
+    let arrStr = document.cookie.split('; ')
     for (let i = 0; i < arrStr.length; i++) {
-      let temp = arrStr[i].split('=');
+      let temp = arrStr[i].split('=')
       if (temp[0] === PLATFORM_FLAG + name) {
         if (temp[1] === undefined || temp[1] === null) {
-          return null;
+          return null
         }
-        return unescape(temp[1]);
+        return unescape(temp[1])
       }
     }
-    return null;
+    return null
   },
   /**
    * 设置
@@ -51,31 +51,31 @@ export default {
    */
   set: function (name, value) {
     if (!browserIsDisableCookie()) {
-      return;
+      return
     }
     if (!name || !value) {
-      console.error('cookie的name或者value不能为空');
+      console.error('cookie的name或者value不能为空')
     }
     // 两分钟过时
     // let exp = new Date();
     // exp.setTime(exp.getTime() + 60 * 2000);
-    document.cookie = PLATFORM_FLAG + name + '=' + escape(value) + ';path=/';
+    document.cookie = PLATFORM_FLAG + name + '=' + escape(value) + ';path=/'
   },
   /**
    * 清除所有cookie内容
    */
   clear: function () {
     if (!browserIsDisableCookie()) {
-      return;
+      return
     }
-    let arrStr = document.cookie.split('; ');
+    let arrStr = document.cookie.split('; ')
     for (let i = 0; i < arrStr.length; i++) {
-      let temp = arrStr[i].split('=');
-      let bf = PLATFORM_FLAG ? temp[0].indexOf(PLATFORM_FLAG) !== -1 : true;
+      let temp = arrStr[i].split('=')
+      let bf = PLATFORM_FLAG ? temp[0].indexOf(PLATFORM_FLAG) !== -1 : true
       if (bf) {
         // 设置过时时间
-        document.cookie = temp[0] + '=0' + ';expires=' + new Date(0).toGMTString() + ';path=/';
+        document.cookie = temp[0] + '=0' + ';expires=' + new Date(0).toGMTString() + ';path=/'
       }
     }
   }
-};
+}

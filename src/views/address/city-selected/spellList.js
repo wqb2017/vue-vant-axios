@@ -27,4 +27,4 @@ export default {
     {label: 'Y', id: 'Y'},
     {label: 'Z', id: 'Z'}
   ]
-};
+}

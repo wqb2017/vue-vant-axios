@@ -36,8 +36,8 @@ export default {
   data () {
     return {
       gender: true
-    };
+    }
   }
-};
+}
 </script>
 <style lang='scss' src='./index.scss'></style>

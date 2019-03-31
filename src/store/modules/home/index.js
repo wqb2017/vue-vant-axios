@@ -6,7 +6,7 @@ export default {
   mutations: {
     // 列表类型
     GOODS_PRODUCTTYPE (state, active) {
-      state.goodsProducttype = active;
+      state.goodsProducttype = active
     }
   }
-};
+}

@@ -38,9 +38,9 @@ export default {
           id: 112313
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang='scss' src='./index.scss'></style>

@@ -1,4 +1,4 @@
-import _import from './_import';
+import _import from './_import'
 // 消息
 export default [
   {
@@ -16,4 +16,4 @@ export default [
       }
     ]
   }
-];
+]
