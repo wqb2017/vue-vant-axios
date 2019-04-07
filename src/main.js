@@ -1,6 +1,13 @@
+/*
+ * @Author: WangQiBiao
+ * @LastEditors: WangQiBiao
+ * @Description: 入口
+ * @Date: 2019-03-31 13:41:09
+ * @LastEditTime: 2019-04-07 22:48:38
+ */
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import 'vant/lib/vant-css/index.css'
+import 'vant/lib/index.css'
 import './assets/css/index.scss'
 import './assets/js/screen-adaptation'
 

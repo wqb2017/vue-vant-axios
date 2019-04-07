@@ -10,31 +10,24 @@
     height: half(80px);
     padding: 0 half(16px);
     z-index: 999;
+    display: flex;
     @include clearfix;
     .selectbox{
-      float: left;
-      margin-right: half(32px);
-      position: relative;
       height: 100%;
       line-height: half(80px);
       color: #333b46;
+      margin-right: 0.42667rem;
       .label{
         max-width: half(180px);
         margin-right: half(10px);
         @include omit;
         font-size: half(26px);
-        float: left;
       }
     }
     .inputbox{
-      width: half(580px);
-      position: absolute;
-      right: half(16px);
-      top: half(10px);
+      flex: 1;
       .van-search {
-        /deep/ .van-cell{
-          border: 1px solid #999faa;
-        }
+        width: 100%;
       }
     }
   }

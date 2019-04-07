@@ -10,9 +10,9 @@
     height: half(80px);
     padding: 0 half(16px);
     z-index: 999;
+    display: flex;
     @include clearfix;
     .selectbox{
-      float: left;
       margin-right: half(32px);
       position: relative;
       color: #fff;
@@ -27,10 +27,7 @@
       }
     }
     .inputbox{
-      width: half(580px);
-      position: absolute;
-      right: half(16px);
-      top: half(10px);
+      flex: 1;
     }
   }
 }

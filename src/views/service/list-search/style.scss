@@ -1,6 +1,8 @@
 .listSearch{
   .searchBox{
     height: 1.173333rem /* 44/37.5 */;
-    padding: 0 .213333rem /* 8/37.5 */;
+    /deep/ .van-search__content {
+      margin-left: 0.42667rem;
+    }
   }
 }

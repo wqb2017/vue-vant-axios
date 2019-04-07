@@ -7140,7 +7140,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^1.2.1:
+vant@^1.6.13:
   version "1.6.13"
   resolved "https://registry.yarnpkg.com/vant/-/vant-1.6.13.tgz#4f16e9dc51d536c11f8328b2ad0aae1ab277dd69"
   integrity sha512-WSaqfNEqJLpio06utbIiCrDEAjI5cf/aCnQMUvHn0YWOe3RQpMXwmX5U4NN+tHZ0l/BtUGBlZMBo9xhCcf/3FQ==
